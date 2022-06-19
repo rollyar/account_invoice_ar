@@ -54,16 +54,16 @@ if minor_version % 2:
 else:
     branch = series
 
-download_url = 'https://github.com/tryton-ar/account_invoice_ar/tree/%s' % branch
+download_url = 'https://github.com/rollyar/account_invoice_ar/tree/%s' % branch
 
 LINKS = {
-    'trytonar_account_ar': ('git+https://github.com/tryton-ar/'
+    'trytonar_account_ar': ('git+https://github.com/rollyar/'
         'account_ar.git@%s#egg=trytonar_account_ar-%s' %
         (branch, series)),
-    'trytonar_bank_ar': ('git+https://github.com/tryton-ar/'
+    'trytonar_bank_ar': ('git+https://github.com/rollyar/'
         'bank_ar.git@%s#egg=trytonar_bank_ar-%s' %
         (branch, series)),
-    'trytonar_party_ar': ('git+https://github.com/tryton-ar/'
+    'trytonar_party_ar': ('git+https://github.com/rollyar/'
         'party_ar.git@%s#egg=trytonar_party_ar-%s' %
         (branch, series)),
     }
@@ -93,7 +93,7 @@ setup(name='%s_%s' % (PREFIX, MODULE),
         "Bug Tracker": 'https://bugs.tryton.org/',
         "Documentation": 'https://docs.tryton.org/',
         "Forum": 'https://www.tryton.org/forum',
-        "Source Code": 'https://github.com/tryton-ar/account_invoice_ar',
+        "Source Code": 'https://github.com/rollyar/account_invoice_ar',
         },
     keywords='tryton, invoice, account, argentina, afip',
     package_dir={'trytond.modules.%s' % MODULE: '.'},
